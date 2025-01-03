@@ -1,8 +1,9 @@
 ---
 layout: default
-modal-id: 3
-date: 2014-07-16
-img: circus.png
+modal-id: 1
+title: Амор
+date: 2014-07-15
+img: amor.jpg
 alt: image-alt
 project-date: April 2014
 client: Start Bootstrap

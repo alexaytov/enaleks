@@ -1,8 +1,9 @@
 ---
 layout: default
-modal-id: 5
-date: 2014-07-14
-img: safe.png
+modal-id: 6
+date: 2014-07-17
+title: Френска Селска
+img: frenska-selska.jpg
 alt: image-alt
 project-date: April 2014
 client: Start Bootstrap

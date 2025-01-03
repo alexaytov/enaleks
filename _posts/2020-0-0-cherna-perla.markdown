@@ -1,8 +1,9 @@
 ---
 layout: default
-modal-id: 6
-date: 2014-07-15
-img: submarine.png
+modal-id: 3
+date: 2014-07-18
+title: Черна Перла
+img: cherna-perla.jpg
 alt: image-alt
 project-date: April 2014
 client: Start Bootstrap
