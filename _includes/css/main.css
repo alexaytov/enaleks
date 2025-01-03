@@ -6,23 +6,28 @@
 
  .carousel-control.left,
  .carousel-control.right {
+     width: 100px; /* Set the width */
+     height: 200px; /* Set the height */
      background-image: linear-gradient(to bottom, #ff69b4, #da70d6); /* Hot Pink to Orchid gradient */
      color: #ffffff; /* White text color */
+     border-radius: 5px; /* Slightly rounded corners */
+     padding: 0; /* Remove padding */
+     top: 50%; /* Vertically center the buttons */
+     transform: translateY(-50%); /* Adjust for perfect centering */
+ }
+ 
+ .carousel-control .icon-prev,
+ .carousel-control .icon-next {
+    height: 100%;
+    margin: auto;
+    top: 10%;
+    font-size: 100px;
  }
  
  .carousel-control.left:hover,
  .carousel-control.right:hover {
      background-image: linear-gradient(to bottom, #da70d6, #ff69b4); /* Orchid to Hot Pink gradient */
      color: #ffffff; /* White text color */
- }
- 
- .carousel-control .icon-prev,
- .carousel-control .icon-next {
-     font-size: 30px;
- }
- 
- .carousel-control .icon-prev {
-     content: '\f053'; /* FontAwesome left arrow */
  }
 body {
     overflow-x: hidden;
