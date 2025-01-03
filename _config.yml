@@ -1,11 +1,13 @@
 # Site settings
-title: Freelancer
+title: Еналекс
 email: your-email@domain.com
 url: https://github.com/jeromelachaud/freelancer-theme
 description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
 keywords: "your keywords, separated by commas"
-skills: "Web Developer - Graphic Artist - User Experience Designer"
-meta_author: LastName FirstName
+skills: "Кафе-сладкарница"
+meta_author: Enaleks
+phone: "+359 88 888 8888"
+address: "Владо Черноземски 3В"
 
 # Google webmaster tools
 google_verify:
@@ -25,11 +27,10 @@ disqus_shortname: myshortname
 
 # Color settings (hex-codes without the leading hash-tag)
 color:
-  primary: 18bc9c #80B3FF
-  primary-rgb: "24,288,156" #"128,179,255"
-  secondary: 2c3e50 #FD6E8A
-  secondary-dark: 233140 #A2122F
-
+  primary: ff69b4 #FF69B4 (Hot Pink)
+  primary-rgb: "255,105,180" #"255,105,180"
+  secondary: dda0dd #DDA0DD (Plum)
+  secondary-dark: 9400d3 #9400D3 (Dark Violet)
 # Footer settings
 footer:
   copyright: Dr. Henry Jekyll
@@ -39,24 +40,14 @@ footer:
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
-  - title: twitter
-    url: http://twitter.com/jekyllrb
   - title: facebook
-    url:
-  - title: stack-overflow
-    url: http://stackoverflow.com/questions/tagged/jekyll
-  - title: bitbucket
-    url: http://bitbucket.org/jekyll
-  - title: github
-    url: http://github.com/jekyll
+    url: https://www.facebook.com/p/%D0%9A%D0%B0%D1%84%D0%B5-%D1%81%D0%BB%D0%B0%D0%B4%D0%BA%D0%B0%D1%80%D0%BD%D0%B8%D1%86%D0%B0-%D0%95%D0%9D%D0%90%D0%BB%D0%B5%D0%BA%D1%81-100057479258691
 
 # Postal address (add as many lines as necessary)
 address:
-  - line: 3481 Melrose Place
-  - line: Beverly Hills, CA 90210
+  - line: Владо Черноземски 3В
 
 # Credits content
-credits: 'Freelancer is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.'
 
 # Build settings
 markdown: kramdown
