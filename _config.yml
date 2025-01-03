@@ -43,10 +43,6 @@ social:
   - title: facebook
     url: https://www.facebook.com/p/%D0%9A%D0%B0%D1%84%D0%B5-%D1%81%D0%BB%D0%B0%D0%B4%D0%BA%D0%B0%D1%80%D0%BD%D0%B8%D1%86%D0%B0-%D0%95%D0%9D%D0%90%D0%BB%D0%B5%D0%BA%D1%81-100057479258691
 
-# Postal address (add as many lines as necessary)
-address:
-  - line: Владо Черноземски 3В
-
 # Credits content
 
 # Build settings
@@ -60,3 +56,7 @@ defaults:
       type: "posts"
     values:
       permalink: ""
+
+collections:
+  cakes:
+    output: true

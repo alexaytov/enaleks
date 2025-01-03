@@ -1,25 +1,64 @@
 <!-- Portfolio Grid Section -->
-<section id="portfolio">
-  <div class="container portfolio-flex-grid">
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <h2>Пасти</h2>
-        <hr class="star-primary">
-      </div>
-    </div>
-    <div class="portfolio-flex-row">
-      {% for post in site.posts %}
-      <div class="portfolio-flex-item portfolio-item">
-        <a href="#portfolioModal-{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
-          <div class="caption">
-            <div class="caption-content">
-              <i class="fa fa-search-plus fa-3x"></i>
-            </div>
+<section id="portfolio" class="portfolio-section">
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <div class="container portfolio-flex-grid">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2>Пасти</h2>
+            <hr class="star-primary">
           </div>
-          <img src="img/portfolio/{{ post.img }}" class="img-responsive" alt="{{ post.alt }}">
-        </a>
+        </div>
+        <div class="portfolio-flex-row">
+          {% for post in site.posts %}
+          <div class="portfolio-flex-item portfolio-item">
+            <a href="#portfolioModal-{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
+              <div class="caption">
+                <div class="caption-content">
+                  <i class="fa fa-search-plus fa-3x"></i>
+                </div>
+              </div>
+              <img src="img/portfolio/{{ post.img }}" class="img-responsive" alt="{{ post.alt }}">
+            </a>
+          </div>
+          {% endfor %}
+        </div>
       </div>
-      {% endfor %}
     </div>
+    <div class="item">
+      <div class="container portfolio-flex-grid">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2>Торти</h2>
+            <hr class="star-primary">
+          </div>
+        </div>
+        <div class="portfolio-flex-row">
+          {% for post in site.cakes %}
+          <div class="portfolio-flex-item portfolio-item">
+            <a href="#portfolioModal-{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
+              <div class="caption">
+                <div class="caption-content">
+                  <i class="fa fa-search-plus fa-3x"></i>
+                </div>
+              </div>
+              <img src="img/cakes/{{ post.img }}" class="img-responsive" alt="{{ post.alt }}">
+            </a>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    ...
   </div>
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="icon-prev" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="icon-next" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
 </section>

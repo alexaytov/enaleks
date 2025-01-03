@@ -4,6 +4,26 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+ .carousel-control.left,
+ .carousel-control.right {
+     background-image: linear-gradient(to bottom, #ff69b4, #da70d6); /* Hot Pink to Orchid gradient */
+     color: #ffffff; /* White text color */
+ }
+ 
+ .carousel-control.left:hover,
+ .carousel-control.right:hover {
+     background-image: linear-gradient(to bottom, #da70d6, #ff69b4); /* Orchid to Hot Pink gradient */
+     color: #ffffff; /* White text color */
+ }
+ 
+ .carousel-control .icon-prev,
+ .carousel-control .icon-next {
+     font-size: 30px;
+ }
+ 
+ .carousel-control .icon-prev {
+     content: '\f053'; /* FontAwesome left arrow */
+ }
 body {
     overflow-x: hidden;
 }
