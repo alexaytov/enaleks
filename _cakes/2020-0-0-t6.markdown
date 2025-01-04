@@ -1,7 +1,7 @@
 ---
 layout: default
 modal-id: 106
-title: Амор
+title: Торта
 date: 2014-07-15
 img: t6.jpg
 alt: image-alt
