@@ -5,10 +5,7 @@ date: 2014-07-16
 title: Еклер
 img: ekler.jpg
 alt: image-alt
-project-date: April 2014
-client: Start Bootstrap
-category: Web Development
-description: Use this area of the page to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+description: Потопете се в изкушението на нашия класически еклер, където всяка хапка е наслада за сетивата! Лекият и пухкав корпус, приготвен от яйца и брашно, крие в себе си нежен крем от мляко, нишесте и сметана. Всичко това е завършено с бляскава глазура от черен шоколад, която добавя щипка луксозен вкус. Всеки наш еклер е изпечен с любов и внимание към детайла, за да ви предложи истинско удоволствие. Насладете се на тази сладка класика – идеална за всякакъв повод.
 ingredients:
     - яйца
     - захар
