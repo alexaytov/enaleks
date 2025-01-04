@@ -5,8 +5,14 @@ title: Амор
 date: 2014-07-15
 img: amor.jpg
 alt: image-alt
-project-date: April 2014
-client: Start Bootstrap
-category: Web Development
-description: Use this area of the page to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+description: Потопете се в магията на "Амор" — небесен десерт, който съчетава богатството на белия шоколад с хрупкавостта на орехите. Приготвен с най-фините съставки като яйца, захар, брашно и сметана, този изкусителен шедьовър е обогатен с какао и нежно мляко за кадифена текстура. Перфектен за тези, които търсят хармония от вкусове във всяка хапка, "Амор" е празник на сладката елегантност и наслада.
+ingredients:
+    - яйца
+    - захар
+    - брашно
+    - сметана
+    - какао
+    - мляко
+    - орехи
+    - бял шоколад
 ---

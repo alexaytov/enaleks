@@ -512,3 +512,20 @@ footer .footer-below {
     transform: translateZ(0);
     -webkit-transform: translateZ(0);
 }
+
+.ingredients-list {
+    list-style: none;
+    padding: 0;
+}
+
+.ingredients-list li {
+    font-size: 18px;
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+}
+
+.ingredients-list li i {
+    color: #ff69b4; /* Hot Pink color for the icons */
+    margin-right: 10px;
+}

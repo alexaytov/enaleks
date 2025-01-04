@@ -5,8 +5,21 @@ date: 2014-07-14
 title: Буено
 img: bueno.jpg
 alt: image-alt
-project-date: April 2014
-client: Start Bootstrap
-category: Web Development
-description: Use this area of the page to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+description: Позволете си удоволствието на "Буено" — десерт, който съчетава всичко, което обичате! Кадифени слоеве от млечен шоколад, обогатени с какао, допълнени с нежен крем, приготвен от сметана и растителна сметана. Всяка хапка е хармония от вкус, постигнат благодарение на внимателно подбрани съставки като яйца, захар, желатин и ароматно нескафе. Създаден с мисъл за ценителите на шоколадовите изкушения, "Буено" е вашият сладък момент на щастие.
+ingredients:
+    - яйца
+    - захар
+    - брашно
+    - сметана
+    - растителна сметана
+    - млечен шоколад
+    - какао
+    - желатин
+    - нескафе
+    - емулгатор
+    - соев лицитин
+    - набухватели
+    - оцветители
+    - консерванти
+    - аромати
 ---
