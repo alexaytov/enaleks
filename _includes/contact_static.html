@@ -10,13 +10,15 @@
     
     <div class="row">
       <div class="col-lg-8">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3527.5896713373513!2d23.088645176635357!3d42.01955267122657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14aaf5fc85b9a2ef%3A0xf88fd9d2a7776f83!2sENAlex!5e1!3m2!1sen!2sbg!4v1735903780011!5m2!1sen!2sbg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe style="max-width: 100%; text-align: center;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3527.5896713373513!2d23.088645176635357!3d42.01955267122657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14aaf5fc85b9a2ef%3A0xf88fd9d2a7776f83!2sENAlex!5e1!3m2!1sen!2sbg!4v1735903780011!5m2!1sen!2sbg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
       <div class="col-xs-4">
         <h3>ТЕЛЕФОН</h3>
         <p>{{ site.phone }}</p>
         <h3>АДРЕС</h3>
-        <p>{{ site.address }}</p>
+        <p>
+          <a class="address-link" target="_blank" href="https://maps.app.goo.gl/qrc5nCYp3NQP8prk8"><strong>{{ site.address }}</strong></a>
+        </p>
       </div>
     </div>
 

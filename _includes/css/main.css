@@ -177,6 +177,7 @@ header .intro-text .skills {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
+    width: 100vw;
 }
 
 .navbar a:focus {
@@ -208,6 +209,10 @@ section h2 {
 section.success {
     color: #fff;
     background: #{{ site.color.primary }};
+}
+
+.address-link {
+    color: #{{ site.color.secondary }};
 }
 
 @media(max-width:767px) {
