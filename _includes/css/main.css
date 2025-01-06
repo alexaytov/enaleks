@@ -529,3 +529,8 @@ footer .footer-below {
     color: #ff69b4; /* Hot Pink color for the icons */
     margin-right: 10px;
 }
+
+#carousel-example-generic {
+    height: 1100px;
+    overflow-y: scroll;
+}
