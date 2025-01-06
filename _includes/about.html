@@ -18,4 +18,89 @@
       </div>
     </div>
   </div>
+
+  <form id="uploadForm">
+    <label for="image">Select an Image:</label>
+    <input type="file" id="image" name="image" accept="image/*" capture="environment" required />
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <script>
+    const staticPrompt = "Help determine which pastry is likely going to be liked by the user based on the image using the provided information. If you can't decide just give one at random a give a goog description why this person might like it.";
+
+    document.getElementById('uploadForm').addEventListener('submit', async (event) => {
+      event.preventDefault();
+
+      const pastryDescriptions = [];
+      document.querySelectorAll('.pastry-description').forEach((element) => {
+        const pastry = element.textContent;
+        pastryDescriptions.push({description: pastry});
+      });
+
+      document.querySelectorAll('.pastry-title').forEach((element, index) => {
+        const pastry = element.textContent;
+        pastryDescriptions[index].title = pastry;
+      });
+
+      const prompt = `${staticPrompt}\n${pastryDescriptions.map((pastry) => `Pastry: ${pastry.title}\nDescription: ${pastry.description}`).join('\n')}`;
+
+      const form = event.target;
+      const formData = new FormData(form);
+      formData.append('prompt', prompt);
+
+      try {
+        const response = await fetch('http://localhost:3000/process', {
+          method: 'POST',
+          body: formData,
+        });
+
+        if (!response.ok) {
+          alert('Failed to process image');
+          return;
+        }
+
+        const result = await response.json();
+        const aiResponse = result.result.response.candidates[0].content.parts[0].text;
+
+        console.log(aiResponse);
+      } catch (error) {
+        console.log('Found error');
+        console.error(error);
+      }
+
+    });
+
+
+    // document.getElementById('uploadForm').addEventListener('submit', async (event) => {
+    //   event.preventDefault();
+
+    //   const form = event.target;
+    //   const formData = new FormData(form);
+    //   formData.append('prompt', staticPrompt);
+
+    //   try {
+    //     const response = await fetch('http://localhost:3000/process', {
+    //       method: 'POST',
+    //       body: formData,
+    //     });
+
+    //     if (!response.ok) {
+    //       alert('Failed to process image');
+    //       return;
+    //     }
+
+    //     const result = await response.json();
+    //     const aiResponse = result.result.response.candidates[0].content.parts[0].text;
+
+    //     console.log(aiResponse);
+
+
+    //   } catch (error) {
+    //     console.log('Found error');
+    //     console.error(error);
+    //   }
+
+    // });
+  </script>
 </section>

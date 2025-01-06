@@ -13,11 +13,11 @@
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2">
           <div class="modal-body">
-            <h2>{{ post.title }}</h2>
+            <h2 class="pastry-title">{{ post.title }}</h2>
             <hr class="star-primary">
             <img src="img/portfolio/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}">
             {% if post.description %}
-            <p>{{ post.description }}</p>
+            <p class="pastry-description">{{ post.description }}</p>
             {% endif %}
             {% if post.ingredients %}
             <h3>Съставки</h3>
