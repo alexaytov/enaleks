@@ -532,7 +532,7 @@ footer .footer-below {
 
 #carousel-example-generic {
     height: 1100px; /* Default height for desktop */
-    overflow-y: scroll; /* Hide overflow */
+    overflow-y: hidden; /* Hide overflow */
 }
 
 @media (max-width: 1024px) {
