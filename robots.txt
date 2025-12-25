@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+Disallow: /test/
+Disallow: /.github/
+Disallow: /mail/
+
+# Sitemap
+Sitemap: https://enaleks.bg/sitemap.xml
+
+# Crawl-delay for politeness
+Crawl-delay: 1

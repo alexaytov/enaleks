@@ -18,14 +18,39 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>{{ site.title }}</title>
+  <title>{% if page.title %}{{ page.title }} - {{ site.seo_title }}{% else %}{{ site.seo_title }}{% endif %}</title>
   <!-- <meta name="viewport" content="width=device-width"> -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="{{ site.description }}">
+  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
   <meta name="keywords" content="{{ site.keywords }}" />
   {% if site.meta_author %}
   <meta name="author" content="{{ site.meta_author }}">{% endif %}
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}">
+  <meta property="og:title" content="{% if page.title %}{{ page.title }} - {{ site.seo_title }}{% else %}{{ site.seo_title }}{% endif %}">
+  <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <meta property="og:image" content="{{ site.url }}/img/cupcake.png">
+  <meta property="og:locale" content="bg_BG">
+  <meta property="og:site_name" content="{{ site.title }}">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}">
+  <meta name="twitter:title" content="{% if page.title %}{{ page.title }} - {{ site.seo_title }}{% else %}{{ site.seo_title }}{% endif %}">
+  <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="twitter:image" content="{{ site.url }}/img/cupcake.png">
+
+  <!-- Additional SEO Meta Tags -->
+  <meta name="robots" content="index, follow">
+  <meta name="googlebot" content="index, follow">
+  <meta name="language" content="Bulgarian">
+  <meta name="geo.region" content="BG">
+  <meta name="geo.placename" content="{{ site.city }}">
+  <meta name="geo.position" content="{{ site.latitude }};{{ site.longitude }}">
+  <meta name="ICBM" content="{{ site.latitude }}, {{ site.longitude }}">
   <link rel="alternate" type="application/rss+xml" title="RSS" href="feed.xml">
   <link rel="shortcut icon" href="./img/cupcake.png" type="image/png">
   <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
@@ -50,4 +75,48 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+  <!-- JSON-LD Structured Data for Local Business -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Bakery",
+    "name": "{{ site.seo_title }}",
+    "image": "{{ site.url }}/img/cupcake.png",
+    "@id": "{{ site.url }}",
+    "url": "{{ site.url }}",
+    "telephone": "{{ site.phone }}",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Владо Черноземски 3В",
+      "addressLocality": "{{ site.city }}",
+      "postalCode": "{{ site.postal_code }}",
+      "addressCountry": "BG"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": {{ site.latitude }},
+      "longitude": {{ site.longitude }}
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "opens": "08:00",
+      "closes": "20:00"
+    },
+    "servesCuisine": "Десерти",
+    "sameAs": [
+      "{{ site.social[0].url }}"
+    ]
+  }
+  </script>
 </head>
