@@ -52,7 +52,15 @@
   <meta name="geo.position" content="{{ site.latitude }};{{ site.longitude }}">
   <meta name="ICBM" content="{{ site.latitude }}, {{ site.longitude }}">
   <link rel="alternate" type="application/rss+xml" title="RSS" href="feed.xml">
-  <link rel="shortcut icon" href="./img/cupcake.png" type="image/png">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ site.url }}/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ site.url }}/img/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="{{ site.url }}/img/favicon-192x192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ site.url }}/img/apple-touch-icon.png">
+  <link rel="shortcut icon" href="{{ site.url }}/favicon.ico">
+  <link rel="manifest" href="{{ site.url }}/site.webmanifest">
+
   <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
   <link rel="stylesheet" href="{{ " style.css" }}">
 

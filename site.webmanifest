@@ -1,0 +1,22 @@
+{
+  "name": "ЕНАлекс - Кафе-сладкарница в Благоевград",
+  "short_name": "ЕНАлекс",
+  "description": "Уютна кафе-сладкарница в Благоевград. Предлагаме пресни домашни торти, сладкиши и кафе.",
+  "icons": [
+    {
+      "src": "/img/favicon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/img/cupcake.png",
+      "sizes": "1024x1024",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#ff69b4",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "start_url": "/",
+  "lang": "bg"
+}
